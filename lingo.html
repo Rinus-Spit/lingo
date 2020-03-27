@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lingo</title>
+    <link rel="stylesheet" href="lingo.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+            <li>
+                <a href="uitleg.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Lingo</h1>
+    <div class="content">
+        <p>
+            Speel het spelletje Lingo!
+        </p>
+        <p>Kies uit hoeveel letters je woord bestaat</p>
+        <label>
+            <input type="radio" name="count_letters" id="count_letters5" oninput="changeCountLetters(5);" value="5">
+            5 letter woord
+        </label>
+        <label>
+            <input type="radio" name="count_letters" id="count_letters6" oninput="changeCountLetters(6);" value="6" checked>
+            6 letter woord
+        </label>
+        <label>
+            <input type="radio" name="count_letters" id="count_letters10" oninput="changeCountLetters(10);" value="10">
+            10 letter woord
+        </label>
+        <p>
+        <input type="text" name="word" id="word" size="6" minLength="6" maxLength="6" class="guess_word">
+        <button onclick="guessWord();">Raad het woord</button>
+        </p>
+        <table id="bord">
+            <tr id="row0" class="gray">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="ready" class="noshow">
+            <button>
+                <a href="lingo.html">Raad een nieuw woord</a>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="lingo.js"></script>
+</body>
+</html>

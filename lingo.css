@@ -1,0 +1,72 @@
+body {
+    width: 80%;
+    margin: 0.1rem auto;
+    background: #eeeeee;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    width: 10%;
+}
+
+td, .blauw {
+    background: blue;
+    color: #eeeeee;
+    margin: 1rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+li {
+    text-align: left;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
+td input {
+    background: blue;
+}
+
+.active {
+    background: aqua;
+}
+
+.succes {
+    background: orange;
+    border-radius: 20% / 20%;
+    width: 100%;
+    height: 100%;
+}
+
+.occurs {
+    background: gold;
+    border-radius: 40% / 40%;
+    width: 100%;
+    height: 100%;
+}
+
+.noshow {
+    display: none;
+}
+
+tr.gray td {
+    background: #eeeeee;
+}
+
+@media (max-width: 576px) {
+    td, .blauw {
+        font-size: 2rem;
+    }
+}
