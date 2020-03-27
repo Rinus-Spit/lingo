@@ -79,10 +79,9 @@ function showRow() {
         let sellSpan = document.createElement('span');
         if (guessed[i] === 2 ) {
             sellSpan.innerHTML = toGuessWord[i];
-            sellSpan.className = 'succes '+'f'+i;
+            sellSpan.className = 'succes';
         } else {
             sellSpan.innerHTML = '&nbsp;';
-            sellSpan.className = 'f'+i;
         }
         cell.append(sellSpan);
         row.append(cell);
