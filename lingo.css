@@ -59,6 +59,7 @@ td input {
 
 .noshow {
     display: none;
+    margin-top: 2rem;
 }
 
 tr.gray td {

@@ -54,12 +54,6 @@ function changeCountLetters(countLetters) {
     for (let i=1;i<lengthWord;i++){
         showGuess += ' ';
     }
-    // uit guessed de 1 en weghalen
-    for (let i=0;i<lengthWord;i++){
-        if (guessed[i] === 1) {
-            guessed[i] = 0;
-        }
-    }
     showRow();
 }
 
@@ -87,6 +81,13 @@ function showRow() {
         row.append(cell);
     }
     bord.append(row);
+
+    // uit guessed de 1 en weghalen
+    for (let i=0;i<lengthWord;i++){
+        if (guessed[i] === 1) {
+            guessed[i] = 0;
+        }
+    }
 
     if (round === 2) {
         var radios = document.getElementsByName('count_letters');
