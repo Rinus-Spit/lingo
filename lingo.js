@@ -3,7 +3,7 @@ const toGuessWords6 = ['CORONA','SLAGER','BRIDGE','WERKEN','MATRAS'];
 const toGuessWords10 = ['BACKOFFICE','DAADKRACHT','GANGENMENU','GANZEBORD','RAAKLIJNEN'];
 let lengthWord = 6;
 let toGuessWord = toGuessWords6[Math.floor(Math.random() * (toGuessWords6.length))];
-const timeout = 1000;
+const timeout = 200;
 // guessed is array van guessed letters, 0 is komt niet voor, 1 is komt voor, 2 is klopt
 let guessed = [2,0,0,0,0,0];
 let occurs = [false,false,false,false,false,false];
