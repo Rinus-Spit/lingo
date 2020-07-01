@@ -1,6 +1,6 @@
-const toGuessWords5 = ['VIRUS','THUIS','PAARD','BESEF'];
-const toGuessWords6 = ['CORONA','SLAGER','BRIDGE','WERKEN','MATRAS'];
-const toGuessWords10 = ['BACKOFFICE','DAADKRACHT','GANGENMENU','GANZEBORD','RAAKLIJNEN'];
+// const toGuessWords5 = ['VIRUS','THUIS','PAARD','BESEF'];
+// const toGuessWords6 = ['CORONA','SLAGER','BRIDGE','WERKEN','MATRAS'];
+// const toGuessWords10 = ['BACKOFFICE','DAADKRACHT','GANGENMENU','GANZEBORD','RAAKLIJNEN'];
 let lengthWord = 6;
 let toGuessWord = toGuessWords6[Math.floor(Math.random() * (toGuessWords6.length))];
 const timeout = 200;
@@ -117,6 +117,28 @@ function guessWord() {
     if (guess.length<lengthWord || guess.length>lengthWord) {
         alert("geef een woord van "+lengthWord+" letters in!");
         return false;
+    }
+
+    //controleer of het een woord is
+    switch (lengthWord) {
+        case 5:
+            if (toGuessWords5.indexOf(guess) === -1){
+                alert(guess+" is geen geldig woord!");
+                return false;
+            }
+        break;
+        case 6:
+            if (toGuessWords6.indexOf(guess) === -1){
+                alert(guess+" is geen geldig woord!");
+                return false;
+            }
+        break;
+        case 10:
+            if (toGuessWords10.indexOf(guess) === -1){
+                alert(guess+" is geen geldig woord!");
+                return false;
+            }
+        break;
     }
 
     // controleer op goed geraden letters
